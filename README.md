@@ -1,6 +1,6 @@
 # Red Hat Developer Hub on Red Hat Developer Sandbox with Tekton Plugin
 
-# Moodle Component Example on Red Hat Developer Sandbox
+## Moodle Component Example on Red Hat Developer Sandbox
 <p align="left">
 <img src="https://img.shields.io/badge/moodle-FF7F50?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle">
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
@@ -18,8 +18,9 @@
 
 # Pre-instalation
 
-## Clone repo on OpenShift Web Terminal
-
+## Clone repo developer-hub-on-developer-sandbox
+0. Clone repo on OpenShift Web Terminal.
+   
 ```bash
 git clone https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox
 ```
@@ -38,7 +39,6 @@ Resolving deltas: 100% (10/10), done.
 
 
 ## Complete URL, Token GitHub, OAuth from app-config-rhdh.yaml file.
-
 0. Update app-config-rhdh.yaml file.
 
 ## Token GitHub [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
@@ -125,11 +125,12 @@ Example:
       ...
 ```
 
+
+# Instalation and deploy Moodle Component
+
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
-
-# Instalation
 
 2. Apply Manifest app-config-rhdh.yaml & backstage-role-binding-service-account.yaml 
 
@@ -182,8 +183,29 @@ STATUS: deployed
 REVISION: 1
 ```
 
+4. Apply and Deploy Moodle Component pipeline
 
+```bash
+oc apply -f https://raw.githubusercontent.com/maximilianoPizarro/moodle/master/pipeline.yaml
+```
 
+```bash
+Output:
+bash-5.1 ~ $ oc apply -f https://raw.githubusercontent.com/maximilianoPizarro/moodle/master/pipeline.yaml
+persistentvolumeclaim/moodle-workspace created
+task.tekton.dev/s2i-php-74 created
+pipeline.tekton.dev/moodle created
+```
 
+5. Install yq task from edit pipeline view
+
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura3.PNG?raw=true" width="684" title="Run On Openshift">
+</p>  
+
+6. Run pipeline with parameter
+
+   
+8. From Developer Hub portal, look at the CI and Kubernetes seccion on Moodle Component
 
 
