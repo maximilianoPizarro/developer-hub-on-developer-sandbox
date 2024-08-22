@@ -125,6 +125,10 @@ Example:
       ...
 ```
 
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
+</p>
+
 # Instalation
 
 2. Apply Manifest app-config-rhdh.yaml & backstage-role-binding-service-account.yaml 
@@ -146,7 +150,7 @@ rolebinding.rbac.authorization.k8s.io/ backstage-read-only configured
 
 3. Install Developer Hub with Helm Cli
 
-##Add openshift helm charts
+## Add repo OpenShift Helm Charts
 
 ```bash
 helm repo add openshift-helm-charts https://charts.openshift.io/
@@ -160,7 +164,7 @@ WARNING: Kubernetes configuration file is world-readable. This is insecure. Loca
 "openshift-helm-charts" has been added to your repositories
 ```
 
-##Deploy Developer Hub using Helm Charts Values
+## Deploy Developer Hub using Helm Charts Values
 
 ```bash
 helm install redhat-developer-hub openshift-helm-charts/redhat-developer-hub -f developer-hub-on-developer-sandbox/values.yaml --version 1.2.2
