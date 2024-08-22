@@ -41,8 +41,8 @@ Resolving deltas: 100% (10/10), done.
 ## Complete URL, Token GitHub, OAuth from app-config-rhdh.yaml file.
 0. Update app-config-rhdh.yaml file.
 
-## Token GitHub [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
-
+## Token GitHub 
+[https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
 ```bash
 -->app-config-rhdh.yaml
     ...
@@ -53,7 +53,8 @@ Resolving deltas: 100% (10/10), done.
     ...
 ```
 
-## OAuth Client [https://github.com/settings/developers](https://github.com/settings/developers)
+## OAuth Client
+[https://github.com/settings/developers](https://github.com/settings/developers)
 
 ```bash
         ...
@@ -126,8 +127,14 @@ Example:
 ```
 
 
-# Instalation and deploy Moodle Component
+# Instalation and Deploy Moodle Component
 
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
+</p>
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
+</p>
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
@@ -182,8 +189,25 @@ NAMESPACE: maximilianopizarro5-dev
 STATUS: deployed
 REVISION: 1
 ```
+4. Access to Developer Portal with GitHub Access.
 
-4. Apply and Deploy Moodle Component pipeline
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-github-access.PNG?raw=true" width="684" title="Run On Openshift">
+</p>
+
+5. Register Moodle Componet.
+
+[https://github.com/maximilianoPizarro/moodle/blob/main/catalog-info.yaml](https://github.com/maximilianoPizarro/moodle/blob/main/catalog-info.yaml)
+
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-component.PNG?raw=true" width="684" title="Run On Openshift">
+</p> 
+
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
+</p> 
+
+6. From OpenShift Web Terminal Apply and Deploy Moodle Component pipeline.
 
 ```bash
 oc apply -f https://raw.githubusercontent.com/maximilianoPizarro/moodle/master/pipeline.yaml
@@ -197,15 +221,18 @@ task.tekton.dev/s2i-php-74 created
 pipeline.tekton.dev/moodle created
 ```
 
-5. Install yq task from edit pipeline view
+7. Install yq task from edit pipeline view.
 
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura3.PNG?raw=true" width="684" title="Run On Openshift">
 </p>  
 
-6. Run pipeline with parameter
+8. Run pipeline with parameter.
 
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
+</p> 
    
-8. From Developer Hub portal, look at the CI and Kubernetes seccion on Moodle Component
+9. From Developer Hub portal, look at the CI and Kubernetes seccion on Moodle Component
 
 
