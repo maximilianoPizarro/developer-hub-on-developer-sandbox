@@ -226,12 +226,16 @@ pipeline.tekton.dev/moodle created
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura3.PNG?raw=true" width="684" title="Run On Openshift">
 </p>  
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
+</p> 
 
 8. Run pipeline with parameter.
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
+
    
 9. From Developer Hub portal, look at the CI and Kubernetes seccion on Moodle Component
 
