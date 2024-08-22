@@ -235,4 +235,19 @@ pipeline.tekton.dev/moodle created
    
 9. From Developer Hub portal, look at the CI and Kubernetes seccion on Moodle Component
 
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI.PNG?raw=true" width="684" title="Run On Openshift">
+</p> 
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI-LOG.PNG?raw=true" width="684" title="Run On Openshift">
+</p>
 
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD.PNG?raw=true" width="684" title="Run On Openshift">
+</p>
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD-RUNNING.PNG?raw=true" width="684" title="Run On Openshift">
+</p>
+
+
+   
