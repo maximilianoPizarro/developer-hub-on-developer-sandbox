@@ -78,9 +78,20 @@ oc apply -f backstage-role-binding-service-account.yaml
 ```bash
 Output:
 Welcome to the OpenShift Web Terminal. Type "help" for a list of installed CLI tools.
-bash-4.4 ~ $ oc apply -f app-config-rhdh.yaml
-bash-4.4 ~ $ oc apply -f backstage-role-binding-service-account.yaml
-persistentvolumeclaim/moodle-workspace created
-task.tekton.dev/s2i-php-74 configured
-pipeline.tekton.dev/moodle configured
+bash-5.1 ~ $ git clone https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox
+Cloning into 'developer-hub-on-developer-sandbox'...
+remote: Enumerating objects: 41, done.
+remote: Counting objects: 100% (41/41), done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 41 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (41/41), 79.82 KiB | 3.19 MiB/s, done.
+Resolving deltas: 100% (10/10), done.
+
+bash-5.1 ~ $ oc apply -f developer-hub-on-developer-sandbox/app-config-rhdh.yaml                        
+configmap/app-config-rhdh configured
+
+bash-5.1 ~ $ oc apply -f developer-hub-on-developer-sandbox/backstage-role-binding-service-account.yaml 
+role.rbac.authorization.k8s.io/backstage-read-only configured
+serviceaccount/backstage-read-only configured
+rolebinding.rbac.authorization.k8s.io/ backstage-read-only configured
 ```
