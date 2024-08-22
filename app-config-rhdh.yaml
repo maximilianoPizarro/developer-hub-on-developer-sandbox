@@ -1,0 +1,31 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: app-config-rhdh
+data:
+  app-config-rhdh.yaml: |
+    app:
+      title: Red Hat Developer Hub
+      baseUrl: <<URL>>
+    integrations:
+      github:
+        - host: github.com
+          token: <<TOKEN-GITHUB-REPO>>
+    auth:
+      allowGuestAccess: true
+      environment: development
+      providers:
+        github:
+          development:
+            clientId: <<CLIENT-ID>>
+            clientSecret: <<CLIENT-SECRET>>
+    enabled:
+      github: true
+    kubernetes:
+      customResources:
+        - group: 'tekton.dev'
+          apiVersion: 'v1beta1'
+          plural: 'pipelineruns'
+        - group: 'tekton.dev'
+          apiVersion: 'v1beta1'
+          plural: 'taskruns'  
