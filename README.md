@@ -16,7 +16,7 @@
 
 [Developer Hub Official Documentation](https://docs.redhat.com/de/documentation/red_hat_developer_hub/1.2/html/configuring_plugins_in_red_hat_developer_hub)
 
-# Pre-instalation
+# Pre-installation
 
 ## Clone repo developer-hub-on-developer-sandbox
 0. Clone repo on OpenShift Web Terminal.
@@ -127,7 +127,7 @@ Example:
 ```
 
 
-# Instalation and Deploy Moodle Component
+# Installation and Deploy Moodle Component
 
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
