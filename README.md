@@ -20,33 +20,42 @@
 
 0. Update app-config-rhdh.yaml file.
 
-[https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
+#Token GitHub [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
 
 ```bash
+app-config-rhdh.yaml
+    ...
     integrations:
       github:
         - host: github.com
           token: <<TOKEN-GITHUB-REPO>>
+    ...
 ```
-[OAuth GitHub] (https://github.com/settings/developers)
+
+#OAuth Client [https://github.com/settings/developers](https://github.com/settings/developers)
 
 ```bash
+        ...
         github:
           development:
             clientId: <<CLIENT-ID>>
             clientSecret: <<CLIENT-SECRET>>
+        ...
 ```
 
-[URL](#)
+#URL Developer Hub Base
 
 ```bash
+      ...
       baseUrl: <<URL>> https://redhat-developer-hub-<NAMESPACE>.apps.sandbox-m2.ll9k.p1.openshiftapps.com/
+      ...
 ```
 
 1. Modify namespace from backstage-role-binding-service-account.yaml file.
    
 ```bash
 backstage-role-binding-service-account.yaml
+       ...
         kind: RoleBinding
         apiVersion: rbac.authorization.k8s.io/v1
         metadata:
@@ -56,10 +65,8 @@ backstage-role-binding-service-account.yaml
           - kind: User
             apiGroup: rbac.authorization.k8s.io
             name: 'system:serviceaccount:<<NAMESPACE>>:backstage-read-only'
-        roleRef:
-          apiGroup: rbac.authorization.k8s.io
-          kind: Role
-          name: backstage-read-only     
+       ...
+
 ```
 
 2. Open Web Terminal from Developer Sandbox
