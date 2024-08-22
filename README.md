@@ -1,2 +1,1 @@
-# developer-hub-developer-sandbox
-Run Developer Hub On Red Hat Developer Sandbox
+# Run Developer Hub on Red Hat Developer Sandbox
