@@ -144,5 +144,42 @@ serviceaccount/backstage-read-only configured
 rolebinding.rbac.authorization.k8s.io/ backstage-read-only configured
 ```
 
-3. Apply Manifest app-config-rhdh.yaml & backstage-role-binding-service-account.yaml 
+3. Install Developer Hub with Helm Cli
+
+##Add openshift helm charts
+
+```bash
+helm repo add openshift-helm-charts https://charts.openshift.io/
+```
+
+```bash
+Output:
+bash-5.1 ~ $ helm repo add openshift-helm-charts https://charts.openshift.io/
+WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /home/user/.kube/config
+WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: /home/user/.kube/config
+"openshift-helm-charts" has been added to your repositories
+```
+
+##Deploy Developer Hub using Helm Charts Values
+
+```bash
+helm install redhat-developer-hub openshift-helm-charts/redhat-developer-hub -f developer-hub-on-developer-sandbox/values.yaml --version 1.2.2
+```
+
+```bash
+Output:
+bash-5.1 ~ $ helm install redhat-developer-hub openshift-helm-charts/redhat-developer-hub -f developer-hub-on-developer-sandbox/values.yaml --version 1.2.2
+WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /home/user/.kube/config
+WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: /home/user/.kube/config
+NAME: redhat-developer-hub
+LAST DEPLOYED: Thu Aug 22 22:44:39 2024
+NAMESPACE: maximilianopizarro5-dev
+STATUS: deployed
+REVISION: 1
+```
+
+
+
+
+
 
