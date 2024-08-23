@@ -96,7 +96,7 @@ Example:
         kind: RoleBinding
         apiVersion: rbac.authorization.k8s.io/v1
         metadata:
-          name: ' backstage-read-only'
+          name: 'backstage-read-only'
           namespace: <<NAMESPACE>>
         subjects:
           - kind: User
@@ -111,8 +111,8 @@ Example:
         kind: RoleBinding
         apiVersion: rbac.authorization.k8s.io/v1
         metadata:
-          name: ' backstage-read-only'
-          namespace: maxi
+          name: 'backstage-read-only'
+          namespace: maximilianopizarro5-dev
         subjects:
           - kind: User
             apiGroup: rbac.authorization.k8s.io
