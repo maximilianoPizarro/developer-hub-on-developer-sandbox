@@ -97,7 +97,7 @@ Resolving deltas: 100% (10/10), done.
 
 ```
 ```bash
-example
+Example:
        ...
         kind: RoleBinding
         apiVersion: rbac.authorization.k8s.io/v1
@@ -174,7 +174,7 @@ rolebinding.rbac.authorization.k8s.io/ backstage-read-only configured
 3. Install Developer Hub with Helm Cli
 
 ## Add repo OpenShift Helm Charts
-
+Open OpenShift Web Terminal and run.
 ```bash
 helm repo add openshift-helm-charts https://charts.openshift.io/
 ```
@@ -188,7 +188,7 @@ WARNING: Kubernetes configuration file is world-readable. This is insecure. Loca
 ```
 
 ## Deploy Developer Hub using Helm Charts Values
-
+Open OpenShift Web Terminal and run.
 ```bash
 helm install redhat-developer-hub openshift-helm-charts/redhat-developer-hub -f developer-hub-on-developer-sandbox/values.yaml --version 1.2.2
 ```
