@@ -1,11 +1,10 @@
-# Red Hat Developer Hub on Red Hat Developer Sandbox with Tekton Plugin
+# Red Hat Developer Hub on Developer Sandbox with Tekton Plugin
 
-## Moodle Component Example on Red Hat Developer Sandbox
+## Deploy Moodle Component Example on Red Hat Developer Sandbox
 <p align="left">
 <img src="https://img.shields.io/badge/moodle-FF7F50?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle">
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
-<img src="https://img.shields.io/badge/docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
 <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">
 <a href="https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">     
 </p>
@@ -18,7 +17,7 @@
 </p> 
 
 
-[Developer Hub: Official Documentation](https://docs.redhat.com/de/documentation/red_hat_developer_hub/1.2/html/configuring_plugins_in_red_hat_developer_hub)
+[Red Hat Developer Hub](https://developers.redhat.com/learn/openshift/install-and-configure-red-hat-developer-hub-and-explore-templating-basics)
 
 # Pre-installation
 
@@ -52,7 +51,7 @@ Resolving deltas: 100% (10/10), done.
 ```bash
 -->app-config-rhdh.yaml
     ...
-    integrations:
+    integrati0ons:
       github:
         - host: github.com
           token: <<TOKEN-GITHUB-REPO>>
@@ -75,7 +74,13 @@ Resolving deltas: 100% (10/10), done.
 
 ```bash
       ...
-      baseUrl: <<URL>> https://redhat-developer-hub-<NAMESPACE>.apps.sandbox-m2.ll9k.p1.openshiftapps.com/
+      baseUrl: <<URL>> https://redhat-developer-hub- <NAMESPACE> .apps.sandbox-m2.ll9k.p1.openshiftapps.com/
+      ...
+```
+```bash
+Example:
+      ...
+      baseUrl: <<URL>> https://redhat-developer-hub-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/
       ...
 ```
 
@@ -107,7 +112,7 @@ Example:
         subjects:
           - kind: User
             apiGroup: rbac.authorization.k8s.io
-            name: 'system:serviceaccount:<<NAMESPACE>>:backstage-read-only'
+            name: 'system:serviceaccount:maximilianopizarro5-dev:backstage-read-only'
        ...
 
 ```
@@ -237,7 +242,7 @@ task.tekton.dev/s2i-php-74 created
 pipeline.tekton.dev/moodle created
 ```
 
-7. Install yq Task from Edit Pipeline View. 
+7. Install yq Task from Edit Pipeline View. See the README.md file in the Moodle Component repository for more information about this.
 
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura3.PNG?raw=true" width="684" title="Run On Openshift">
@@ -246,30 +251,35 @@ pipeline.tekton.dev/moodle created
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
 
-8. From OpenShift, run the Moodle pipeline with parameters. See the README.md file in the repository for more information.
+8. From OpenShift, run the Moodle pipeline with parameters. 
 
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
 
    
-9. Open the Developer Hub portal. Look at the CI and Kubernetes section in the Moodle component.
+9. Open the Red Hat Developer Hub portal. Look at the CI and Kubernetes section in the Moodle component.
 
-## Developer Hub CI
+## Red Hat Developer Hub CI
+Look at the pipeline.
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI.PNG?raw=true" width="684" title="Run On Openshift">
-</p> 
+</p>
+Review task pipeline logs.
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI-LOG.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
 
-## Developer Hub Kubernetes
+## Red Hat Developer Hub Kubernetes
+Check the health of the POD.
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
+See the log from POD running.
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD-RUNNING.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
 
-
+Red Hat Developer Hub is amazing!
+Build Here. Go anywhere.
    
