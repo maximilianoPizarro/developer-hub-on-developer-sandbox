@@ -1,5 +1,7 @@
 # Red Hat Developer Hub on Developer Sandbox with Tekton Plugin
-
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-moodle.png?raw=true" width="684" title="Run On Openshift">
+</p> 
 <p align="left">
 <img src="https://img.shields.io/badge/backstage-%23121011.svg?style=for-the-badge&logo=backstage&logoColor=white" alt="Backstage">  
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
