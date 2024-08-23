@@ -11,12 +11,12 @@
 <a href="https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">     
 </p>
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/COVER.jpeg?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/COVER.jpeg?raw=true" width="900" title="Run On Openshift">
 </p>
   
 ## Try Deploy [Moodle Component](https://github.com/maximilianoPizarro/moodle) Example on Red Hat Developer Sandbox  
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-topology.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-topology.PNG?raw=true" width="900" title="Run On Openshift">
 </p> 
 
 
@@ -165,7 +165,7 @@ Example:
 # Installation and Deploy Moodle Component
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="900" title="Run On Openshift">
 </p>
 
 3. Apply Manifest the app-config-rhdh.yaml and the backstage-role-binding-service-account.yaml files in your namespace.
@@ -221,7 +221,7 @@ REVISION: 1
 5. Access to Developer Portal with GitHub Access.
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-github-access.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-github-access.PNG?raw=true" width="900" title="Run On Openshift">
 </p>
 
 6. Register Moodle Componet.
@@ -229,11 +229,11 @@ REVISION: 1
 [https://github.com/maximilianoPizarro/moodle/blob/main/catalog-info.yaml](https://github.com/maximilianoPizarro/moodle/blob/main/catalog-info.yaml)
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-component.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-component.PNG?raw=true" width="900" title="Run On Openshift">
 </p> 
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="900" title="Run On Openshift">
 </p> 
 
 ## Deploy Moodle Component with Tekton Pipelines
@@ -254,16 +254,16 @@ pipeline.tekton.dev/moodle created
 8. Install yq Task from Edit Pipeline View. See the README.md file in the Moodle Component repository for more information about this.
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura3.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura3.PNG?raw=true" width="900" title="Run On Openshift">
 </p>  
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="900" title="Run On Openshift">
 </p> 
 
 9. From OpenShift, run the Moodle pipeline with parameters. 
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline.PNG?raw=true" width="900" title="Run On Openshift">
 </p> 
 
    
@@ -272,21 +272,21 @@ pipeline.tekton.dev/moodle created
 ## Red Hat Developer Hub CI
 Look at the pipeline.
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI.PNG?raw=true" width="900" title="Run On Openshift">
 </p>
 Review task pipeline logs.
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI-LOG.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI-LOG.PNG?raw=true" width="900" title="Run On Openshift">
 </p>
 
 ## Red Hat Developer Hub Kubernetes
 Check the health of the POD.
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD.PNG?raw=true" width="900" title="Run On Openshift">
 </p>
 See the log from POD running.
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD-RUNNING.PNG?raw=true" width="684" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD-RUNNING.PNG?raw=true" width="900" title="Run On Openshift">
 </p>
 
 Red Hat Developer Hub is amazing!
