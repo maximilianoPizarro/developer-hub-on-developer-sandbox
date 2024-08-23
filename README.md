@@ -22,8 +22,10 @@
 
 # Pre-installation
 
-## Clone repo developer-hub-on-developer-sandbox
-0. Clone repo on OpenShift Web Terminal.
+To install, you'll need to provision [Developer Sandbox](https://developers.redhat.com/developer-sandbox) for 30 days and a GitHub Account.
+
+## Clone Repo
+0. From OpenShift Dedicated, Open OpenShift Web Terminal and clone repo.
    
 ```bash
 git clone https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox
@@ -43,7 +45,7 @@ Resolving deltas: 100% (10/10), done.
 
 
 ## Complete URL, Token GitHub, OAuth from app-config-rhdh.yaml file.
-0. Update app-config-rhdh.yaml file.
+0. Update the app-config-rhdh.yaml file.
 
 ## Token GitHub 
 [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
@@ -77,7 +79,7 @@ Resolving deltas: 100% (10/10), done.
       ...
 ```
 
-1. Modify namespace from backstage-role-binding-service-account.yaml file.
+1. Modify namespace from the backstage-role-binding-service-account.yaml file.
    
 ```bash
 -->backstage-role-binding-service-account.yaml
@@ -90,12 +92,27 @@ Resolving deltas: 100% (10/10), done.
         subjects:
           - kind: User
             apiGroup: rbac.authorization.k8s.io
+            name: 'system:serviceaccount: <<NAMESPACE>> :backstage-read-only'
+       ...
+
+```
+```bash
+example
+       ...
+        kind: RoleBinding
+        apiVersion: rbac.authorization.k8s.io/v1
+        metadata:
+          name: ' backstage-read-only'
+          namespace: maxi
+        subjects:
+          - kind: User
+            apiGroup: rbac.authorization.k8s.io
             name: 'system:serviceaccount:<<NAMESPACE>>:backstage-read-only'
        ...
 
 ```
 
-## Cluster Router Base from values.yaml
+## Cluster Router Base
 
 ```bash
 -->values.yaml
@@ -112,7 +129,7 @@ Example:
           clusterRouterBase: apps.sandbox-m2.ll9k.p1.openshiftapps.com
       ...
 ```
-## K8S_CLUSTER_URL from values.yaml
+## K8S_CLUSTER_URL
 
 ```bash
 -->values.yaml
@@ -136,14 +153,8 @@ Example:
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
-<p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
-</p>
-<p align="left">
-  <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-running.PNG?raw=true" width="684" title="Run On Openshift">
-</p>
 
-2. Apply Manifest app-config-rhdh.yaml & backstage-role-binding-service-account.yaml 
+2. Apply Manifest the app-config-rhdh.yaml and the backstage-role-binding-service-account.yaml files.
 
 ```bash
 oc apply -f developer-hub-on-developer-sandbox/app-config-rhdh.yaml 
@@ -211,7 +222,8 @@ REVISION: 1
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
 
-6. From OpenShift Web Terminal Apply and Deploy Moodle Component pipeline.
+## Deploy Moodle Component with Tekton Pipelines
+6. Open OpenShift Web Terminal Apply and Deploy Moodle Component with Tekton Pipelines.
 
 ```bash
 oc apply -f https://raw.githubusercontent.com/maximilianoPizarro/moodle/master/pipeline.yaml
@@ -225,7 +237,7 @@ task.tekton.dev/s2i-php-74 created
 pipeline.tekton.dev/moodle created
 ```
 
-7. Install yq task from edit pipeline view.
+7. Install yq Task from Edit Pipeline View. 
 
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura3.PNG?raw=true" width="684" title="Run On Openshift">
@@ -234,15 +246,16 @@ pipeline.tekton.dev/moodle created
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-catalog.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
 
-8. Run pipeline with parameter.
+8. From OpenShift, run the Moodle pipeline with parameters. See the README.md file in the repository for more information.
 
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
 
    
-9. From Developer Hub portal, look at the CI and Kubernetes seccion on Moodle Component
+9. Open the Developer Hub portal. Look at the CI and Kubernetes section in the Moodle component.
 
+## Developer Hub CI
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
@@ -250,6 +263,7 @@ pipeline.tekton.dev/moodle created
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-CI-LOG.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
 
+## Developer Hub Kubernetes
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-pipeline-POD.PNG?raw=true" width="684" title="Run On Openshift">
 </p>
