@@ -44,10 +44,10 @@ Resolving deltas: 100% (10/10), done.
 ```
 
 
-## Complete URL, Token GitHub, OAuth GitHub Client from app-config-rhdh.yaml file.
+## Complete Parameters from files.
 0. Update the app-config-rhdh.yaml file.
 
-## Token GitHub 
+### Token GitHub 
 [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
 ```bash
 -->app-config-rhdh.yaml
@@ -59,7 +59,7 @@ Resolving deltas: 100% (10/10), done.
     ...
 ```
 
-## OAuth GitHub Client
+### OAuth GitHub Client
 [https://github.com/settings/developers](https://github.com/settings/developers)
 
 ```bash
@@ -72,7 +72,7 @@ Resolving deltas: 100% (10/10), done.
         ...
 ```
 
-## URL Base
+### Base URL
 
 ```bash
 -->app-config-rhdh.yaml
@@ -120,7 +120,7 @@ Example:
 
 ```
 
-## Cluster Router Base
+### Cluster Router Base
 
 ```bash
 -->values.yaml
@@ -137,7 +137,7 @@ Example:
           clusterRouterBase: apps.sandbox-m2.ll9k.p1.openshiftapps.com
       ...
 ```
-## K8S_CLUSTER_URL
+### K8S_CLUSTER_URL
 
 ```bash
 -->values.yaml
