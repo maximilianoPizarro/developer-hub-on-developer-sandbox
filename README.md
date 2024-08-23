@@ -70,7 +70,7 @@ Resolving deltas: 100% (10/10), done.
         ...
 ```
 
-## URL Base Developer Hub Base
+## URL Base
 
 ```bash
       ...
@@ -178,7 +178,7 @@ rolebinding.rbac.authorization.k8s.io/ backstage-read-only configured
 
 3. Install Developer Hub with Helm Cli
 
-## Add repo OpenShift Helm Charts
+## Add OpenShift Helm Charts repo
 Open OpenShift Web Terminal and run.
 ```bash
 helm repo add openshift-helm-charts https://charts.openshift.io/
