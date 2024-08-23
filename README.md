@@ -1,17 +1,18 @@
 # Red Hat Developer Hub on Developer Sandbox with Tekton Plugin
 
-## Deploy Moodle Component Example on Red Hat Developer Sandbox
 <p align="left">
-<img src="https://img.shields.io/badge/moodle-FF7F50?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle">
+<img src="https://img.shields.io/badge/backstage-%23121011.svg?style=for-the-badge&logo=backstage&logoColor=white" alt="Backstage">  
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
+<img src="https://img.shields.io/badge/moodle-FF7F50?style=for-the-badge&logo=moodle&logoColor=white" alt="Moodle">
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
 <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">
 <a href="https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">     
 </p>
-
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/COVER.jpeg?raw=true" width="684" title="Run On Openshift">
 </p>
+  
+## Try Deploy Moodle Component Example on Red Hat Developer Sandbox  
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/developer-hub-on-developer-sandbox/blob/main/screenshot/developer-hub-register-moodle-topology.PNG?raw=true" width="684" title="Run On Openshift">
 </p> 
@@ -43,7 +44,7 @@ Resolving deltas: 100% (10/10), done.
 ```
 
 
-## Complete URL, Token GitHub, OAuth from app-config-rhdh.yaml file.
+## Complete URL, Token GitHub, OAuth GitHub Client from app-config-rhdh.yaml file.
 0. Update the app-config-rhdh.yaml file.
 
 ## Token GitHub 
@@ -58,10 +59,11 @@ Resolving deltas: 100% (10/10), done.
     ...
 ```
 
-## OAuth Client
+## OAuth GitHub Client
 [https://github.com/settings/developers](https://github.com/settings/developers)
 
 ```bash
+-->app-config-rhdh.yaml
         ...
         github:
           development:
@@ -73,6 +75,7 @@ Resolving deltas: 100% (10/10), done.
 ## URL Base
 
 ```bash
+-->app-config-rhdh.yaml
       ...
       baseUrl: <<URL>> https://redhat-developer-hub- <NAMESPACE> .apps.sandbox-m2.ll9k.p1.openshiftapps.com/
       ...
