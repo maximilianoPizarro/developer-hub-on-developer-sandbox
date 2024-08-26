@@ -178,7 +178,7 @@ oc apply -f developer-hub-on-developer-sandbox/backstage-role-binding-service-ac
 
 ```bash
 Output:
-bash-5.1 ~ $                        
+bash-5.1 ~ $ oc apply -f developer-hub-on-developer-sandbox/app-config-rhdh.yaml                        
 configmap/app-config-rhdh configured
 bash-5.1 ~ $ oc apply -f developer-hub-on-developer-sandbox/backstage-role-binding-service-account.yaml 
 role.rbac.authorization.k8s.io/backstage-read-only configured
