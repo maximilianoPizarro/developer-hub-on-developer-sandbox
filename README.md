@@ -91,10 +91,10 @@ Example:
 ```
 
 ### Namespace Role Bindiging
-1. Update the backstage-secret-sa.yaml and the backstage-role-binding-service-account.yaml  files.
+1. Update the backstage-role-binding-service-account.yaml file.
    
 ```bash
--->backstage-secret-sa.yaml
+-->backstage-role-binding-service-account.yaml
        ...
         apiVersion: v1
         kind: ServiceAccount
