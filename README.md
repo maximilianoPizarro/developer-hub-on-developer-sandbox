@@ -91,8 +91,31 @@ Example:
 ```
 
 ### Namespace Role Bindiging
-1. Update the backstage-role-binding-service-account.yaml file.
+1. Update the backstage-secret-sa.yaml and the backstage-role-binding-service-account.yaml  files.
    
+```bash
+-->backstage-secret-sa.yaml
+       ...
+        apiVersion: v1
+        kind: ServiceAccount
+        metadata:
+          name: backstage-read-only
+          namespace: <<NAMESPACE>> 
+       ...
+
+```
+```bash
+Example:
+       ...
+        apiVersion: v1
+        kind: ServiceAccount
+        metadata:
+          name: backstage-read-only
+          namespace: maximilianopizarro5-dev  
+       ...
+
+```
+
 ```bash
 -->backstage-role-binding-service-account.yaml
        ...
@@ -123,6 +146,8 @@ Example:
        ...
 
 ```
+
+
 
 ## Chart Values
 2. Update the values.yaml file.
